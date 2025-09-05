@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/skincare-flow/",   // passt zu simon-hill-de/skincare-flow
+  base: "/skincare-flow/", // wichtig für GitHub Pages
 });
