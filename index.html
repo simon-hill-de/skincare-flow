@@ -1,12 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0f0f0f" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skincare Flow</title>
 
-    <!-- Dark-Mode schon vor Render setzen -->
+    <!-- Early Dark Mode Script -->
     <script>
       (function () {
         try {
@@ -21,8 +20,9 @@
       })();
     </script>
   </head>
-  <body class="bg-gray-50 dark:bg-[#0f0f0f]">
+  <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- wichtig: hier das Präfix /skincare-flow/ -->
+    <script type="module" src="/skincare-flow/src/main.jsx"></script>
   </body>
 </html>
