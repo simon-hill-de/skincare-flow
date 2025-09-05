@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f0f0f" />
+    <title>Skincare Flow</title>
+
+    <!-- Dark-Mode schon vor Render setzen -->
+    <script>
+      (function () {
+        try {
+          const saved = localStorage.getItem("skf-theme");
+          const prefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (saved === "dark" || (!saved && prefersDark)) {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (_) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/skincare-flow/assets/index-5d281826.js"></script>
+    <link rel="stylesheet" href="/skincare-flow/assets/index-5c336b84.css">
+  </head>
+  <body class="bg-gray-50 dark:bg-[#0f0f0f]">
+    <div id="root"></div>
+    
+  </body>
+</html>
